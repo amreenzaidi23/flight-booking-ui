@@ -1,0 +1,51 @@
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div>
+      <a routerLink="/searchflight" class="nav-link">Search Flight</a>
+    </div>
+
+    <ul class="navbar-nav">
+      <li>
+        <a
+          *ngIf="loginService.isUserLoggedIn()"
+          routerLink="/viewflight"
+          class="nav-link"
+          >View Flight</a
+        >
+      </li>
+      <li>
+        <a
+          *ngIf="loginService.isUserLoggedIn()"
+          routerLink="/viewbook"
+          class="nav-link"
+          >View Booked Flight</a
+        >
+      </li>
+      <li>
+        <a
+          *ngIf="loginService.isUserLoggedIn()"
+          routerLink="/addflight"
+          class="nav-link"
+          >Add New Flight</a
+        >
+      </li>
+
+      <li>
+        <a
+          *ngIf="!loginService.isUserLoggedIn()"
+          routerLink="/login"
+          class="nav-link"
+          >Login</a
+        >
+      </li>
+      <li>
+        <a
+          *ngIf="loginService.isUserLoggedIn()"
+          routerLink="/logout"
+          class="nav-link"
+          >LogOut</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

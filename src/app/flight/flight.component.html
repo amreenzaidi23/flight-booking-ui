@@ -1,0 +1,32 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>source</th>
+        <th>destination</th>
+        <th>seat</th>
+        <th>bookedSeat</th>
+        <th>amount</th>
+        <th>date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let flight of flights">
+        <td>{{ flight.name }}</td>
+        <td>{{ flight.source }}</td>
+
+        <td>{{ flight.destination }}</td>
+        <td>{{ flight.seat }}</td>
+        <td>{{ flight.bookedSeat }}</td>
+        <td>{{ flight.amount }}</td>
+        <td>{{ flight.date }}</td>
+        <td>
+          <button class="btn btn-danger" (click)="deleteFlight(flight)">
+            Delete Flight
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

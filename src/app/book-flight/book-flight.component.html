@@ -1,0 +1,124 @@
+<div class="col-md-6">
+  <form>
+    <table class="table table-striped">
+      <thead>
+        Booking Details
+      </thead>
+      <tbody>
+        <tr>
+          <td>Flight name</td>
+          <td>
+            <input
+              type="text"
+              disabled
+              name="flightname"
+              value="{{ flight.name }}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>source name</td>
+          <td>
+            <input
+              type="text"
+              disabled
+              name="source"
+              value="{{ flight.source }}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>destination name</td>
+          <td>
+            <input
+              type="text"
+              disabled
+              name="destination"
+              value="{{ flight.destination }}"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Available seat</td>
+          <td>
+            <input type="text" disabled name="seat" value="{{ flight.seat }}" />
+          </td>
+        </tr>
+        <tr>
+          <td>Date</td>
+          <td>
+            <input type="text" disabled name="date" value="{{ flight.date }}" />
+          </td>
+        </tr>
+        <tr>
+          <td>Amount</td>
+          <td>
+            <input
+              type="text"
+              disabled
+              name="amount"
+              value="{{ flight.amount }}"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Passenger Name</td>
+          <td>
+            <input
+              type="text"
+              name="passengername"
+              [(ngModel)]="book.paxName"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input type="text" name="email" [(ngModel)]="book.paxEmail" />
+          </td>
+        </tr>
+        <tr>
+          <td>Passenger Age</td>
+          <td>
+            <input
+              type="number"
+              name="passengerage"
+              [(ngModel)]="book.paxAge"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Number Seat</td>
+          <td>
+            <input
+              type="number"
+              name="bookedseat"
+              [(ngModel)]="book.bookedSeat"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>Credit card number</td>
+          <td>
+            <input
+              type="number"
+              maxlength="16"
+              minlength="16"
+              size="16"
+              name="card"
+              [(ngModel)]="book.paxCarNumber"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button class="btn btn-success" (click)="bookFlight(book, flight)">
+              Book
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

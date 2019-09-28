@@ -1,0 +1,27 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>name</th>
+        <th>source</th>
+        <th>destination</th>
+        <th>Pax Name</th>
+        <th>Email</th>
+        <th>Booked Seat</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of booking">
+        <td>{{ book.name }}</td>
+        <td>{{ book.source }}</td>
+
+        <td>{{ book.destination }}</td>
+        <td>{{ book.paxName }}</td>
+        <td>{{ book.paxEmail }}</td>
+        <td>{{ book.bookedSeat }}</td>
+        <td>{{ book.date }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

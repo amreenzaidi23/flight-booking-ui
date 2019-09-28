@@ -1,0 +1,84 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add Flight</h2>
+  <form>
+    <div class="form-group">
+      <label for="name">Flight Name:</label>
+      <input
+        type="name"
+        [(ngModel)]="flight.name"
+        placeholder="Name"
+        name="name"
+        class="form-control"
+        id="name"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="source">Source:</label>
+      <input
+        [(ngModel)]="flight.source"
+        placeholder="Source"
+        name="source"
+        class="form-control"
+        id="source"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="destination">Destination:</label>
+      <input
+        [(ngModel)]="flight.destination"
+        placeholder="Destination"
+        name="destination"
+        class="form-control"
+        id="destination"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="flightId">Flight Id</label>
+      <input
+        [(ngModel)]="flight.flightId"
+        placeholder="Flight Id"
+        name="Flight Id"
+        class="form-control"
+        id="flightId"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input
+        [(ngModel)]="flight.date"
+        placeholder="Date"
+        name="Date"
+        class="form-control"
+        id="date"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="date">Seat</label>
+      <input
+        [(ngModel)]="flight.seat"
+        placeholder="Seat"
+        name="Seat"
+        class="form-control"
+        id="seat"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="amount">Amount</label>
+      <input
+        [(ngModel)]="flight.amount"
+        placeholder="Amount"
+        name="Amount"
+        class="form-control"
+        id="amount"
+      />
+    </div>
+
+    <button class="btn btn-success" (click)="createFlight()">Create</button>
+  </form>
+</div>
