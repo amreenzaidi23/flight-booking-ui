@@ -1,4 +1,4 @@
-# flight-booking-system
+# flight-booking-ui
 
 Spring book project setup and execution:-
 (used Eclipse)
