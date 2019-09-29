@@ -1,21 +1,6 @@
 # flight-booking-ui
 
-Spring book project setup and execution:-
-(used Eclipse)
-
-application.properties:-
-Provide database connection , username and password.
-First time replace "none" with "create" in below line:
-spring.jpa.hibernate.ddl-auto=none
-
-In case of any change go to project directory and run below commands to build and run project:-
-Build project
-	mvn clean install
-Run project
-	java -jar target/flight-booking-0.0.1-SNAPSHOT.jar
-
-
-Angular project build and execution:-
+Angular project setup and execution:-
 (used Visual Studio)
 
 Go to project directory and run below commands:-
